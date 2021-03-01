@@ -1,0 +1,10 @@
+Name    Score
+Johnny  8.65
+Hine    9.12
+Aaron   8.45
+Anaru   7.81
+Kelly   8.05
+Aroha   7.21
+Bradeen 8.31
+Stacey  5.06
+Mike    9.11
