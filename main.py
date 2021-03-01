@@ -7,16 +7,19 @@ result_f.close()
 highest_score = 0
 result_f = open("results.txt")
 for line in result_f:
-    if float(line) > highest_score :
-       highest_score = float(line) 
+  #Split() method to cut the line in two, creating the name and score variables
+  (name, score) = line.split()
+  if float(score) > highest_score :
+       highest_score = float(score) 
 result_f.close()
+#Display the result 
 print("The highest score is: ")
 print(highest_score)
 
 
 
-#Testing split() method to cut the string 
-rock_band = "Al Carl Mike Brian"
-(a, b, c, d)= rock_band.split()
-print(a)
-print(d)
+# #Testing split() method to cut the string 
+# rock_band = "Al Carl Mike Brian"
+# (a, b, c, d)= rock_band.split()
+# print(a)
+# print(d)
