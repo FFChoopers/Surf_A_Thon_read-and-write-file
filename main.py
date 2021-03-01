@@ -3,18 +3,24 @@ result_f = open("results.txt")
 for line in result_f:
     print(line)
 result_f.close()
-#Find the highest score and convert data type from the Loop.
-highest_score = 0
+#Find the top three scores by sorting data in a list.
+scores = []
 result_f = open("results.txt")
 for line in result_f:
   #Split() method to cut the line in two, creating the name and score variables
   (name, score) = line.split()
-  if float(score) > highest_score :
-       highest_score = float(score) 
+  print(score)
+  scores.append(float(score))
 result_f.close()
-#Display the result 
-print("The highest score is: ")
-print(highest_score)
+
+print(scores)
+scores.sort()
+scores.reverse()
+print(scores)
+print(scores[0])
+print(scores[1])
+print(scores[2])
+
 
 
 
